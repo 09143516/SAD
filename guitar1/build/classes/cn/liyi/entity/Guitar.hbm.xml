@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- 配置Admin类的映射 -->
+<hibernate-mapping package="cn.liyi.entity">
+	<class name="Guitar" table="guitar">
+		<id name="serialNumber">
+			<generator class="native"></generator>
+		</id>
+		<property name="price" length="20"></property>
+		<property name="builder" length="10"></property>
+		<property name="model" length="10"></property>
+		<property name="type" length="10"></property>
+		<property name="backWood" length="20"></property>
+		<property name="topWood" length="20"></property>
+	</class>
+</hibernate-mapping>
