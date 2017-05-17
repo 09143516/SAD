@@ -1,33 +1,30 @@
-<%@ page contentType="text/html; charset=UTF-8" language="java" errorPage="" %>
-<%@taglib prefix="s" uri="/struts-tags"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-    <title>查询吉他</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>吉他</title>
 </head>
 <body>
-    <form  role="form" action="search_s" method="post">
-        <div>
-            <label>builder</label>
-        </div>
-        <input type="text" name="builder">
-        <div>
-            <label>model</label>           
-        </div>
-         <input type="text" name="model">
-        <div>
-            <label>type</label>
-        </div>
-        <input type="text" name="type">
-        <div>
-            <label>backWood</label>
-        </div>
-        <input type="text" name="backWood">
-        <div>
-            <label>topWood</label>
-        </div>
-        <input type="text" name="topWood">
-            <button type="submit">查询</button>
-    </form>
+<form action="guitar_search">
+<label>builder:</label>
+	<input type="text" name="builder">
+	<label>model:</label>
+	<input type="text" name="model">
+	<label>numberString:</label>
+	<input type="text" name="numberStrings">
+	<label>type:</label>
+	<input type="text" name="type">
+	<label>backWood:</label>
+	<input type="text" name="backWood">
+	<label>topWood:</label>
+	<input type="text" name="topWood">
+	<input type="submit" value="查询">
+	
+</form>
+<!--  <form action="guitar_add">
+<input type="submit" value="添加">
+</form>  -->
 </body>
+</html>

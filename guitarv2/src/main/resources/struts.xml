@@ -1,16 +1,19 @@
-<?xml version="1.0" encoding="GBK"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE struts PUBLIC
 	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
-	<constant name="conststruts.devMode" value="true"/>
-	<!-- Struts2的所有Action都需位于package下 -->
+	<constant name="conststruts.devMode" value="true" />
+	<constant name="struts.multipart.maxSize" value="10485760" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+
+
+	<!-- Struts2鐨勬墍鏈堿ction閮介渶浣嶄簬package涓� -->
 	<package name="lee" extends="struts-default">
-		<!-- 收藏管理 -->
-		<action name="search_s" class="guitar.searchAction" method="search">
-			<result name="success" >/WEB-INF/content/searchList.jsp</result>
-			<result name="error" >/WEB-INF/content/null.jsp</result>
-		</action>
+
+	<action name="guitar_*" class="Action.GuitarAction" method="{1}">
+		<result name="success">/WEB-INF/content/result.jsp</result>
+	</action>
 		<action name="*">
 			<result>/WEB-INF/content/{1}.jsp</result>
 		</action>
