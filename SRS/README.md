@@ -1,5 +1,5 @@
 ﻿# SRS
-选课系统
+系统
 
 ## 项目结构
 ![项目结构截图](https://github.com/09143516/SAD/blob/master/SRS/%E7%BB%93%E6%9E%84%E6%88%AA%E5%9B%BE.PNG)
